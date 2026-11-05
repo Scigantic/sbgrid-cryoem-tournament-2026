@@ -182,6 +182,10 @@ We used three kinds of evidence, all at low resolution:
 - **3D classification without alignment** (989,338 particles, bin 2, K = 8, 286 Å spherical mask so longer particles are not cut off, poses from the consensus refinement). Seven classes are five-unit particles 184 to 191 Å long (9.4% to 21.5% each, 7.5 to 7.7 Å). One class (2.6%, 8.8 Å) is 213 Å long, with more density at both ends.
 - **Axial density profiles of the classes.** Scaled to each class's own middle, the end unit near -80 Å is at 0.46 to 0.62 in every class, and the one near +70 Å at 0.76 to 0.88. One end unit is therefore weak throughout, rather than missing from a subset of particles. Inside the particle the classes correlate at 0.72 to 0.96, and all share the same slight bend of 4° to 7° in nearly the same direction.
 
+![Classification and interpretation figure](figures/ct03_q5_classification.png)
+
+The figure we submitted for Q5. **A:** side views of the eight 3D classes in one common frame, sorted by population, with each class's population and estimated resolution. **B:** axial density profile of each class, scaled to its own middle; all classes have their units in the same places, and the end unit near -80 Å is weak in every class. **C:** focused classification of the middle three units; three classes reach 4.62 Å and one 4.81 Å, the same as a random subset of the same size.
+
 The five units are not copies of one unit. Neighboring units in the consensus map correlate at only 0.60 to 0.73 after the best superposition, against 0.95 to 0.98 for the same unit between half maps.
 
 **Flexibility.** Local resolution is 4.2 to 5 Å over the middle ±50 Å and falls to 6.3 to 6.5 Å at both ends. Multi-body refinement of the middle third improved its in-run resolution by about 1 Å, and focused refinement improved the masked FSC from 4.33 to 4.11 Å. We read this as continuous flexing of the ends relative to the middle.
@@ -257,7 +261,7 @@ No closed-source tools were used (no CryoSPARC, crYOLO or similar).
 
 ```
 README.md            this file
-figures/             FSC curves, direction-dependent FSC and workflow diagram
+figures/             FSC curves, direction-dependent FSC, classification figure, workflow diagram
 code/                scripts as they ran on the cluster
   common.sh          shared settings and helpers: stage bookkeeping, copying results home
   presets/           dataset settings (pixel size, dose, voltage)
